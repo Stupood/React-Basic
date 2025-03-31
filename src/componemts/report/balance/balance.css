@@ -1,0 +1,7 @@
+.balance-container{
+    display: flex;
+    justify-content: center;
+}
+.balance{
+    margin: 5px 0;
+}

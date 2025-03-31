@@ -1,0 +1,10 @@
+.home_page.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.home_page.title{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}

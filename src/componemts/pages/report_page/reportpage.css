@@ -1,0 +1,12 @@
+.report_page.container{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    background-color: rgb(175, 107, 107);
+    margin: 0;
+}
+
+.report_page.title{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}

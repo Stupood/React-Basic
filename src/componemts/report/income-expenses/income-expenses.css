@@ -1,0 +1,34 @@
+.income-expenses-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    gap: 1rem;
+    text-align: center;
+    font-size: 15px;
+    &:before{
+      content: "";
+      border: 1.5px solid #d3d3d3;
+      align-self: stretch;
+      border-image: linear-gradient(45deg, #3f51b5, #cddc39) 1;
+  }   
+}
+.section_item{
+  flex: 1;
+  overflow-wrap: break-word;
+}
+.section_item>h2{
+  letter-spacing: 3px;
+}
+.section_item.section_income>h2{
+  color: #3fb570;
+}
+.section_item.section_expenses>h2{
+  color: #ec455b;
+}
+.section_income{
+  order: -1;
+}
+

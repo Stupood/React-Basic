@@ -1,0 +1,15 @@
+.forms.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.forms.form{
+    cursor: pointer;
+    width: 25em;
+    background: #f5d1a6;
+    border: 2px solid rgb(212, 212, 212);
+    padding: 1em;
+    border-radius: 1em;
+}
+

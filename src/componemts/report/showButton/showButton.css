@@ -1,0 +1,61 @@
+.show-report-btn.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 500ms;
+}
+
+.show-report-btn.show_hide{
+    color: #000000;
+    border: solid white;
+    border-radius: 0.5rem;
+    background: #ffffff; 
+    display: flex;
+    justify-content: center;
+    margin-top: min(3em , 5%);
+    margin-bottom: min(3em , 5%);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    vertical-align: baseline;
+    width: min(100%,10%);
+    transition: all 250ms;
+    z-index: 1;
+    &:before{
+        content: '';
+		position: absolute;
+        background: inherit;
+		z-index: -1;
+		top: 0; right: 0; bottom: 0; left: 0;
+		filter: blur(10px);
+	} 
+    &:enabled{
+        color: black;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: #ffffff;
+        &:before{
+            position: absolute;
+            filter: blur(3px);
+        }
+    }
+    &:enabled:hover{
+        transform: translateY(-1px);
+        color: black;
+        border-color: rgba(165, 4, 4, 0);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.425); 
+        &:before{
+            position: absolute;
+            filter: blur(10px);
+        }
+    } 
+    &:enabled:active{
+        transform: translateY(0);
+        color: rgb(190, 190, 190);
+        box-shadow: none;
+        &:before{
+            position: static;
+            filter: none;
+        }
+    }
+}

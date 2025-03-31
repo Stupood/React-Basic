@@ -1,0 +1,38 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: min(3em,2%);
+    margin-bottom: min(3em,2%);
+}
+.input.data label{
+    display: flex;
+    margin-top: min(3em,1%);
+    margin-bottom: min(3em,1%);
+    font-size: 18px;
+    cursor: pointer;
+}
+.input.data input{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: min(3em,2%);
+    margin-bottom: min(3em,2%);
+    width: 100%;
+    outline: none;
+    position: relative;
+    transition: all 350ms;
+    &:hover{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425); 
+    }
+    &:focus:hover{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425); 
+    }
+}
