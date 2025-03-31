@@ -8,7 +8,8 @@ export default function Balance(){
     <div className='balance-container'>
       <span className='balance'>
         {/* balance {(state.financial.balance+state.financial.income)-state.financial.expenses} */}
-        balance {currencyFormat(state.financial.balance)}
+        balance 
+        {currencyFormat(state.financial.balance)}
 
       </span>
     </div>
