@@ -6,12 +6,12 @@ export default function Balance(){
 
   return (
     <div className='balance-container'>
-      <span className='balance'>
+      <text className='balance'>
         {/* balance {(state.financial.balance+state.financial.income)-state.financial.expenses} */}
         balance 
-        {currencyFormat(state.financial.balance)}
+        <div>{currencyFormat(state.financial.balance)}</div>
 
-      </span>
+      </text>
     </div>
   )
 }
