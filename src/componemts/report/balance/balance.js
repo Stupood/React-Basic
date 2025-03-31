@@ -9,7 +9,7 @@ export default function Balance(){
       <text className='balance'>
         {/* balance {(state.financial.balance+state.financial.income)-state.financial.expenses} */}
         balance 
-        <div>{currencyFormat(state.financial.balance)}</div>
+        {currencyFormat(state.financial.balance)}
 
       </text>
     </div>
